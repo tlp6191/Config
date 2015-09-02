@@ -14,6 +14,8 @@ function! Current()
   let substr = substitute(string,".*=.*".searchR,searchR,"")
   echom substr
 endfunction
+nnoremap <F8> :set paste<CR>
+nnoremap <F9>  :setl nopaste<CR>
     
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
