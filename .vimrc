@@ -14,8 +14,8 @@ function! Current()
   let substr = substitute(string,".*=.*".searchR,searchR,"")
   echom substr
 endfunction
-nnoremap <F8> :set paste<CR>
-nnoremap <F9>  :setl nopaste<CR>
+nnoremap <F8> :set paste<CR>:set nonu<CR>
+nnoremap <F9>  :setl nopaste<CR>:set nu<CR>
     
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -187,4 +187,6 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
+set paste
+set tags=./tags,tags;$HOME
 colorscheme zellner
