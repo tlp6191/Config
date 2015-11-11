@@ -1,0 +1,7 @@
+*.out
+*.pyc
+*.err
+*.log
+*.swp
+*.o
+*.tmp
