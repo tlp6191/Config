@@ -190,3 +190,6 @@ set splitright
 set paste
 set tags=./tags,tags;$HOME
 colorscheme zellner
+au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
+au BufRead,BufNewFile *.py,*pyw set tabstop=4
+au BufRead,BufNewFile *.py,*.pyw set expandtab
